@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8bb45c5a0e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        font-family: "Work Sans", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        padding: 10px 200px;
+        justify-content: space-between;
+        background: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .logo-img {
+        width: 60px;
+        height: 30px;
+      }
+
+      nav > ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+
+      nav > ul > li {
+        list-style-type: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #3c354f;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .social-media {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        border-radius: 8px;
+        background: rgba(11, 2, 35, 0.1);
+        padding: 15px;
+      }
+
+      .header-title {
+        color: #0b0223;
+        font-size: 45px;
+        font-weight: 700;
+      }
+
+      /*banner-section*/
+      .banner-container {
+        display: flex;
+        gap: 70px;
+        border: 1px solid red;
+        background: #fff;
+      }
+
+      .banner-content {
+        width: 50%;
+      }
+      .banner-items {
+        background-image: url("images/Group\ 14.png");
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .banner-img {
+        padding-right: 200px;
+      }
+
+      .banner-img img {
+        width: 100%;
+      }
+
+      .header-title {
+        color: #0b0223;
+        font-size: 48px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      #goat {
+        background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-size: 95px;
+        font-weight: 800;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="logo-img" src="images/Frame.png" alt="" />
+          <h1 class="header-title">Gamer</h1>
+        </div>
+        <ul>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Developers</a></li>
+          <div class="social-media">
+            <li><a href="">Follow us on</a></li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="banner-container">
+        <div class="banner-content banner-items">
+          <h2 class="header-title">
+            PLAY LIKE THE <br /><span id="goat">g.o.a.t</span>
+          </h2>
+          <div class="banner-list">
+            <p><i class="fa-solid fa-play"></i> 1-Click instant play</p>
+            <p><i class="fa-solid fa-circle-down"></i> No Download</p>
+            <p>
+              <i class="fa-solid fa-user-group"></i> 1000s of supported online
+              games
+            </p>
+          </div>
+
+          <div class="btn-container">
+            <button class="btn-primary" type="button">SIGN IN</button>
+            <button class="btn-secondary" type="button">GO ROUGH</button>
+          </div>
+        </div>
+        <div class="banner-content banner-img">
+          <img src="images/Group 18.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
