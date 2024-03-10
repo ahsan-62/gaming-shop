@@ -73,23 +73,19 @@
 
       /*banner-section*/
       .banner-container {
-        display: flex;
-        gap: 70px;
-        border: 1px solid red;
-        background: #fff;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
       }
 
-      .banner-content {
-        width: 50%;
-      }
       .banner-items {
-        background-image: url("images/Group\ 14.png");
-        background-repeat: no-repeat;
-        padding-left: 200px;
-        background-size: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 200px;
+        background-image: url("images/Group\ 14.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
       }
 
       .banner-img {
@@ -100,7 +96,7 @@
         width: 100%;
       }
 
-      .header-title {
+      .banner-title {
         color: #0b0223;
         font-size: 48px;
         font-weight: 600;
@@ -114,6 +110,102 @@
         text-align: center;
         font-size: 95px;
         font-weight: 800;
+      }
+
+      .btn-primary {
+        padding: 15px 30px;
+        border-radius: 48px;
+        background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      .btn-secondary {
+        padding: 15px 30px;
+        border-radius: 48px;
+        background: #4ec5f7;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      @media screen and (max-width: 576px) {
+        nav {
+          padding: 10px 10px;
+          flex-direction: column;
+        }
+        .logo {
+          justify-content: center;
+        }
+
+        nav > ul {
+          flex-direction: column;
+          gap: 10px;
+          text-align: center;
+          padding: 0px;
+        }
+
+        .banner-container {
+          grid-template-columns: 1fr;
+          padding: 10px;
+        }
+        .banner-items {
+          order: 2;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+        }
+        .banner-title {
+          font-size: 30px;
+        }
+        #goat {
+          font-size: 45px;
+        }
+        .banner-img {
+          order: 1;
+          padding-right: 0px;
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 992px) {
+        nav {
+          padding: 10px 10px;
+          flex-direction: column;
+        }
+
+        nav > ul,
+        .logo {
+          justify-content: center;
+        }
+
+        .banner-container {
+          grid-template-columns: 1fr;
+          padding: 10px;
+        }
+        .banner-items {
+          order: 2;
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+        }
+        .banner-title {
+          font-size: 30px;
+        }
+        #goat {
+          font-size: 45px;
+        }
+        .banner-img {
+          order: 1;
+          padding-right: 0px;
+        }
+      }
+
+      .hide {
+        display: none;
       }
     </style>
   </head>
@@ -140,7 +232,7 @@
     <main>
       <section class="banner-container">
         <div class="banner-content banner-items">
-          <h2 class="header-title">
+          <h2 class="banner-title">
             PLAY LIKE THE <br /><span id="goat">g.o.a.t</span>
           </h2>
           <div class="banner-list">
