@@ -33,6 +33,9 @@
         align-items: center;
         gap: 10px;
       }
+      .logo span {
+        color: #ff42a5;
+      }
 
       .logo-img {
         width: 60px;
@@ -133,6 +136,53 @@
         text-transform: uppercase;
       }
 
+      /*Gamer-sections*/
+
+      .gamer {
+        display: flex;
+        padding: 0px 200px;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+      }
+      .gamer-img img {
+        width: 100%;
+      }
+      .gamer-content {
+        text-align: end;
+      }
+
+      .gamer-title {
+        font-size: 48px;
+        font-weight: 700px;
+        background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .gamer-description {
+        width: 500px;
+        color: #534c64;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+      }
+
+      .gamer-more {
+        color: #534c64;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 45px;
+      }
+
+      .gamer-more span {
+        color: #534c64;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 45px;
+      }
+
       @media screen and (max-width: 576px) {
         nav {
           padding: 10px 10px;
@@ -169,6 +219,18 @@
           order: 1;
           padding-right: 0px;
         }
+
+        .gamer {
+          flex-direction: column;
+          padding: 10px 5px;
+        }
+        .gamer-description {
+          width: 100%;
+        }
+
+        .gamer-content {
+          text-align: center;
+        }
       }
 
       @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -200,7 +262,19 @@
         }
         .banner-img {
           order: 1;
-          padding-right: 0px;
+          padding-right: 20px;
+        }
+
+        .gamer {
+          flex-direction: column;
+          padding: 10px 20px;
+        }
+        .gamer-description {
+          width: 100%;
+        }
+
+        .gamer-content {
+          text-align: center;
         }
       }
 
@@ -214,7 +288,7 @@
       <nav>
         <div class="logo">
           <img class="logo-img" src="images/Frame.png" alt="" />
-          <h1 class="header-title">Gamer</h1>
+          <h1 class="header-title"><span>G</span>amer</h1>
         </div>
         <ul>
           <li><a href="">About Us</a></li>
@@ -251,6 +325,24 @@
         </div>
         <div class="banner-content banner-img">
           <img src="images/Group 18.png" alt="" />
+        </div>
+      </section>
+
+      <section class="gamer">
+        <div class="gamer-img">
+          <img src="images/pngwing 4.png" alt="" />
+        </div>
+        <div class="gamer-content">
+          <h1 class="gamer-title">We are gamer</h1>
+          <p class="gamer-description">
+            An international digital games and entertainment company. We
+            develop, publish and distribute multiplayer mobile games. We reach
+            over 400 million players each month and our audience keeps growing.
+          </p>
+          <button class="btn-primary" type="button">Know more</button>
+          <h3 class="gamer-more">
+            <span>Our purpose... </span><br />“unleash the gamer in everyone”
+          </h3>
         </div>
       </section>
     </main>
