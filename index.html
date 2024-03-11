@@ -238,18 +238,50 @@
         margin: 100px auto;
         display: flex;
         align-items: center;
+        gap: 200px;
       }
       .online-img {
+        width: 320px;
         position: relative;
-        top: 270px;
-        left: -500px;
+        left: -750px;
+        top: 300px;
       }
+
+      .online-game {
+        text-align: end;
+        margin-right: 100px;
+      }
+      .online-title {
+        color: #0b0223;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .online-title span {
+        background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .online-description {
+        color: #534c64;
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 200px;
+      }
+
       .online-game1 {
         display: flex;
       }
 
-      .online-img1 {
-        width: 100%;
+      .online-game-container {
+        position: relative;
+      }
+      .online-img2 {
+        position: absolute;
+        left: -150px;
+        top: 370px;
       }
 
       @media screen and (max-width: 576px) {
@@ -479,7 +511,8 @@
       <section class="online-container">
         <div class="online-game">
           <h3 class="online-title">
-            Play Instantly,<span>No Downloads No Installs.</span>
+            <span>Play Instantly,</span><br />No Downloads <br />
+            No Installs.
           </h3>
           <p class="online-description">
             Play games online for free without downloading. Just click the Play
@@ -487,8 +520,10 @@
           </p>
         </div>
         <div class="online-game1">
-          <img class="online-img1" src="images/Rectangle 55.png" alt="" />
-          <img class="online-img" src="images/Rectangle 66.png" alt="" />
+          <div class="online-game-container">
+            <img class="online-img1" src="images/Rectangle 55.png" alt="" />
+            <img class="online-img2" src="images/Rectangle 66.png" alt="" />
+          </div>
         </div>
       </section>
     </main>
